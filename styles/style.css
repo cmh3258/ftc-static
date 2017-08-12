@@ -20,7 +20,8 @@
 /* Sections */
 	
 	section.section-double-padding{
-		padding: 4em 0 4em;
+		/*padding: 4em 0 4em;*/
+		padding: 1em 1em 3em;
 	}
 	section.center{
 		margin: 0 auto;
@@ -73,12 +74,13 @@
 
 	/* opportunities */
 	.opportunities .col-2{
-		padding: 0;
-		width: 48%;
+		/*padding: 0;*/
+		/*width: 48%;*/
+		padding: 1em;
 	}
-	.opportunities .col-2:nth-of-type(1){
+	/*.opportunities .col-2:nth-of-type(1){
 		padding-right: 2.2em;
-	}
+	}*/
 
 
 	/* content boxes */
@@ -118,7 +120,7 @@
 			margin-top: 2em;
 		}
 		.box .btn-inline-group .btn-default{
-			margin-right: 12px;
+			margin-right: 2px;
 		}
 
 		/*Box - more info*/
@@ -127,7 +129,7 @@
 			border-bottom: 5px solid #79A2B2;
 		}
 		.box-more-info .col-2{
-			width: 40%;
+			/*width: 40%;*/
 			padding: 1em;
 		}
 		.box-more-info .col-2 h6:nth-of-type(1){
@@ -211,7 +213,6 @@
 /* Search Bar */
 	div.search-bar{
 		background-color: white;
-		/*padding: 2em;*/
 		padding: 10px;
 		overflow: auto;
 	}
@@ -227,7 +228,6 @@
 	}
 	div.search-bar button{
 		float: right;
-		/*width: 20%;*/
 		width: 30%;
     	outline: none;
 	}
@@ -244,7 +244,6 @@
 		padding: 2em 0 0em;
 	}
 	footer > section{
-		/*padding: 5em 0 5em;*/
 		padding: 2em;
 	}
 	footer hr{
@@ -252,7 +251,6 @@
     	border-top: 1px solid #CFD8DC;
 	}
 	.footer-container{
-		/*width: 60%;*/
 		margin: 0 auto;
 		text-align: left;
 	}
@@ -297,15 +295,12 @@
 			padding-left: 10px;
 		}
 		footer .row .col-3{
-			/*width: 35%;*/
 			float: left;
 			width: 39%;
 			display: inline-block;
 
 		}
 		footer .row .col-5{
-			/*padding-left: 10px;*/
-			/*width: 17%;*/
 			float: left;
 			display: inline-block;
 			width: 39%;
@@ -389,6 +384,14 @@
 		width: 20%;
 	}
 
+	section.section-double-padding {
+	    padding: 3em 2em 3em;
+	}
+
+	.box .btn-inline-group .btn-default{
+		margin-right: 12px;
+	}
+
 	footer > section{
 		padding: 5em 0 5em;
 	}
@@ -410,11 +413,33 @@
 }
 
 
+@media screen and (min-width: 1000px) {
+
+	.opportunities .col-2{
+		padding: 0;
+		width: 48%;
+	}
+
+	.box-more-info .col-2 {
+	    width: 40%; 
+	    padding: 1em;
+	}
+	.opportunities .col-2:nth-of-type(1){
+		padding-right: 2.2em;
+	}
+
+}
+
+
 @media screen and (min-width: 1200px) {
 	.col-3 {
 	    width: 29%;
 	}
-	
+
+	section.section-double-padding {
+	    padding: 4em 0 4em; 
+	}
+
 	footer .row .col-3 {
 	    width: 39%;
 	}
