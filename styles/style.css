@@ -13,19 +13,12 @@
 	nav.banner-gray{
 		background: #EAEAEA;
 	}
-	.banner-left-content{
-		float: left;
-	}
-	.banner-right-content{
-		float: right;
-	}
+	
 
 
 
 /* Sections */
-	section{
-		padding: 2em;
-	}
+	
 	section.section-double-padding{
 		padding: 4em 0 4em;
 	}
@@ -48,7 +41,7 @@
 
 	/* video section */
 		#video-section{
-			width: 70%;
+			width: 90%;
 			margin: 0 auto;
 		}
 		.video-container{
@@ -85,7 +78,6 @@
 	}
 	.opportunities .col-2:nth-of-type(1){
 		padding-right: 2.2em;
-
 	}
 
 
@@ -167,26 +159,27 @@
 		overflow: auto;
 	}
 	.col-2{
-		display: inline-block;
-		width: 45%;
+		/*display: inline-block;*/
+		/*width: 45%;*/
 		padding: 1em;
 		vertical-align:top;
 	}
 	.col-3{
-		display: inline-block;
-		width: 28%;
+		/*display: inline-block;*/
+		/*width: 28%;*/
 		padding: 1em;
 		vertical-align:top;
 	}
 	.col-5{
-		width: 14%;
-		display: inline-block;
+		/*width: 14%;*/
+		/*display: inline-block;*/
 		padding: 1em;
 		vertical-align:top;
 	}
 
 	/*	Column custom styling */
-	.border-right-light-blue{
+	.border-right-light-blue:nth-of-type(1),
+	.border-right-light-blue:nth-of-type(3){
 		border-right: 1px solid #CFD8DC;
 	}
 
@@ -218,21 +211,24 @@
 /* Search Bar */
 	div.search-bar{
 		background-color: white;
-		padding: 2em;
+		/*padding: 2em;*/
+		padding: 10px;
 		overflow: auto;
 	}
 	div.search-bar input{
 		border: 0;
 		width: 70%;
 		float: left;
-		font-size: 2em;
-    	margin-top: 2px;
+		/*font-size: 2em;*/
+		font-size: 18px;
+    	margin-top: 8px;
     	color: #003C5A;
     	outline: none;
 	}
 	div.search-bar button{
 		float: right;
-		width: 20%;
+		/*width: 20%;*/
+		width: 30%;
     	outline: none;
 	}
 	#search-helper-text{
@@ -248,14 +244,15 @@
 		padding: 2em 0 0em;
 	}
 	footer > section{
-		padding: 5em 0 5em;
+		/*padding: 5em 0 5em;*/
+		padding: 2em;
 	}
 	footer hr{
     	border: 0;
     	border-top: 1px solid #CFD8DC;
 	}
 	.footer-container{
-		width: 60%;
+		/*width: 60%;*/
 		margin: 0 auto;
 		text-align: left;
 	}
@@ -297,19 +294,31 @@
 		footer .row .col-5{
 			padding: 0;
 	    	padding-right: 1em;
+			padding-left: 10px;
 		}
 		footer .row .col-3{
-			width: 35%;
+			/*width: 35%;*/
+			float: left;
+			width: 39%;
+			display: inline-block;
+
 		}
 		footer .row .col-5{
-			padding-left: 10px;
-			width: 17%;
+			/*padding-left: 10px;*/
+			/*width: 17%;*/
+			float: left;
+			display: inline-block;
+			width: 39%;
+			height: 29em;
 		}
 
 	/* Bottom nav */
 		footer .footer-msg{
 			margin: 0 auto;
 			text-align: center;
+		}
+		footer .footer-msg ul{
+			padding: 0;
 		}
 		footer .footer-msg ul li{
 			display: inline-block;
@@ -325,5 +334,89 @@
 		}*/
 
 
+@media screen and (min-width: 375px) {
+		footer .row .col-3{
+			width: 41%;
+		}
+		footer .row .col-5{
+			width: 41%;
+		}
+}
 
+@media screen and (min-width: 595px) {
+	.banner-left-content{
+		float: left;
+	}
+	.banner-right-content{
+		float: right;
+	}
+
+	footer .row .col-3{
+		width: 43%;
+	}
+	footer .row .col-5{
+		width: 43%;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	section{
+		padding: 2em;
+	}
+
+	.col-2{
+		display: inline-block;
+		width: 45%;
+	}
+	.col-3{
+		display: inline-block;
+		width: 27%;
+	}
+	.col-5{
+		width: 14%;
+		display: inline-block;
+	}
+
+	div.search-bar{
+		padding: 2em;
+	}
+	div.search-bar input{
+		font-size: 2em;
+		margin-top: 2px;
+	}
+	div.search-bar button{
+		width: 20%;
+	}
+
+	footer > section{
+		padding: 5em 0 5em;
+	}
+
+
+	.footer-container {
+	    width: 90%;
+	}
+	footer .row .col-3{
+		width: 33%;
+	}
+	footer .row .col-5{
+		width: 17%;
+	}
+	.border-right-light-blue{
+		border-right: 1px solid #CFD8DC;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+	.col-3 {
+	    width: 29%;
+	}
+	
+	footer .row .col-3 {
+	    width: 39%;
+	}
+}
 
