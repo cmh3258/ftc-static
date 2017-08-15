@@ -68,7 +68,7 @@
 
 	/* video section */
 		#video-section{
-			width: 90%;
+			/*width: 90%;*/
 			margin: 0 auto;
 			margin-top: -2em;
 		}
@@ -95,7 +95,7 @@
 			margin-top:1em;
 		}
 		.three-icon-info > div.col-3 > img{
-			width: 3.5em;
+			width: 4em;
 		}
 		.three-icon-info h5{
 			font-family: Raleway;
@@ -149,6 +149,9 @@
 		}
 		.box .btn-default{
 			width: 9em;
+			padding: 12px;
+		    font-size: 12px;
+		    border-radius: 10px;
 		}
 		.box .btn-inline-group{
 			margin-top: 2em;
@@ -222,16 +225,16 @@
 	
 /* Buttons */
 	.btn-default{
-		border-radius: 5px;
-		border:0;
-		background-color: #EAEAEA;
-		cursor: pointer;
-		padding: 12px;
+		border-radius: 12px;
+	    border: 0;
+	    background-color: #EAEAEA;
+	    cursor: pointer;
+	    padding: 18px 12px;
 		font-family: Raleway;
 		font-weight: 800;
 		-webkit-font-smoothing: antialiased;
 		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 14px;
 		color: #F8F9F9;
 		letter-spacing: 2px;
 	}
@@ -335,7 +338,7 @@
 		font-family: FreightSansMedium;
 		-webkit-font-smoothing: antialiased;
 		color: #79A2B2;
-		font-size: 27.15px;
+		font-size: 22px;
 		text-align: center;
 	}
 	footer div.search-bar{
@@ -436,7 +439,7 @@
 	}
 	div.search-bar input{
 		font-size: 2em;
-		margin-top: 2px;
+		margin-top: 6px;
 	}
 	div.search-bar button{
 		width: 20%;
@@ -519,8 +522,12 @@
 	    padding: 4em 0 4em; 
 	}
 
-	footer .row .col-3 {
-	    width: 39%;
+	.footer-container {
+	    width: 60%;
 	}
+	footer .row .col-3 {
+	    width: 37%;
+	}
+
 }
 
