@@ -229,12 +229,14 @@
 	    border: 0;
 	    background-color: #EAEAEA;
 	    cursor: pointer;
-	    padding: 18px 12px;
+	    /*padding: 18px 12px;*/
+	    padding: 10px 12px;
 		font-family: Raleway;
 		font-weight: 800;
 		-webkit-font-smoothing: antialiased;
 		text-transform: uppercase;
-		font-size: 14px;
+		/*font-size: 14px;*/
+		font-size: 10px;
 		color: #F8F9F9;
 		letter-spacing: 2px;
 	}
@@ -308,7 +310,7 @@
 	}
 	.footer-container ul li a{
 	    text-decoration: none;
-	    padding: 5px;
+	    /*padding: 5px;*/
 		color: #78909C;
 		font-size: 15px;
 	    font-family: Raleway;
@@ -404,6 +406,19 @@
 	}
 	.banner-right-content{
 		float: right;
+	}
+
+	.btn-default{
+	    padding: 18px 12px;
+		font-size: 14px;
+	}
+	div.search-bar input {
+	    font-size: 23px;
+	    margin-top: 13px;
+	}
+
+	.footer-container ul li a{
+	    padding: 5px;
 	}
 
 	footer .row .col-3{
