@@ -287,7 +287,7 @@
 		margin: 0 auto;
 		text-align: left;
 	}
-	.footer-container ul{
+	/*.footer-container ul{
 		padding: 0;
 		margin-bottom: 0;
 	}
@@ -307,7 +307,36 @@
 		background-color: #78909C;
 		color: white;
 		border-radius: 19px;
+	}*/
+
+
+	.footer-container p{
+		text-decoration: none;
+		color: #78909C;
+		font-size: 15px;
+	    font-family: Raleway;
+	    -webkit-font-smoothing: antialiased;
+	    font-weight: 600;
+	    display:inline-block;
+	    padding: 5px 8px;
+		margin-bottom: -3px;
+		cursor: pointer;
 	}
+	.footer-container p:hover{
+		background-color: #78909C;
+		color: white;
+		border-radius: 19px;
+	}
+	.footer-container input{
+		display: none;
+	}
+	.footer-container input:checked + p{
+		background-color: #78909C;
+		color: white;
+		border-radius: 19px;
+	}
+	
+
 	.footer-container h5{
 		font-size: 17px;
 		color: #78909C;
