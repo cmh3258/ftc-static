@@ -16,6 +16,11 @@
 	overflow: auto;
 }
 
+hr{
+	border: 0;
+	border-top: 1px solid #CFD8DC;
+}
+
 /* Navigation/Header */
 	nav{
 		overflow: auto;
@@ -129,6 +134,7 @@
 		}
 		.box-container{
 			padding: 2em;
+			margin-bottom: 2em;
 		}
 		.box h5{
 			color: #003C5A;
@@ -137,13 +143,20 @@
 			font-family: Raleway;
 			-webkit-font-smoothing: antialiased;
 		}
+		.box h2,
 		.box h3{
 			font-family: Raleway;
 			-webkit-font-smoothing: antialiased;
 			color: #003C5A;
-			font-size: 26px;
 			margin: 0;
 	    	margin-top: 6px;
+		}
+		.box h2{
+			font-size: 30px;
+			margin: 18px 0;
+		}
+		.box h3{
+			font-size: 26px;
 		}
 		.box p{
 			color: #78909C;
@@ -200,7 +213,8 @@
 		overflow: auto;
 	}
 	.col-2{
-		padding: 1em;
+		/*padding: 1em;*/
+		padding-bottom: 1em;
 		vertical-align:top;
 	}
 	.col-3{
@@ -306,10 +320,14 @@
 	#sign-up-page .box{
 		margin: 0 auto;
 		width: 80%;
+		margin-top: 2em;
 	}
 
 	#sign-up-form{
 		margin-top: 3em;
+	}
+	#sign-up-form h3{
+		margin: 16px 0;
 	}
 	#sign-up-form button{
 		margin-top: 2em;
@@ -333,23 +351,28 @@
 		margin-bottom: 4px;
 		text-transform: uppercase;
 		font-weight: 600;
+		margin: 8px 0;
 	}
 
 	#campus-selector{
 		margin-bottom: 2em;
 		margin-top: -1em;
+		margin-left: -8px;
 	}
 	#campus-selector > div{
 		display: inline-block;
 	}
 
-	.sign-up-form-input input{
+	.sign-up-form-input input,
+	.sign-up-form-input textarea{
 		border: 0px;
-	    font-size: 16px;
+	    font-size: 22px;
 	    padding: 10px;
+		font-family: Raleway;
+		font-weight: bold;
 	    -webkit-font-smoothing: antialiased;
-		color: #79A2B2;
 		width: 100%;
+		color: #003C5A;
 	}
 	.sign-up-form-input textarea{
 		width: 100%;
@@ -364,10 +387,6 @@
 /* Footer */
 	footer > section{
 		padding: 2em;
-	}
-	footer hr{
-    	border: 0;
-    	border-top: 1px solid #CFD8DC;
 	}
 	.footer-container{
 		margin: 0 auto;
@@ -534,6 +553,11 @@
 		.col-5{
 			width: 14%;
 			display: inline-block;
+		}
+
+	/* sign up form */
+		#sign-up-form .col-2:nth-of-type(1){
+			padding-right: 2em;
 		}
 
 	/* Search Bar */
