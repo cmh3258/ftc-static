@@ -119,6 +119,7 @@
 
 	/* content boxes */
 		.box{
+			text-align: left;
 		}
 		.box-gray{
 			background-color: #EAEAEA;
@@ -274,6 +275,91 @@
 		font-weight: bolder;
 	}
 
+/* input checkboxes */
+	.chbx_label input[type=checkbox]{
+		display: none;
+	}
+	.chbx_label input[type=checkbox]:checked + p{
+		background-color: #78909C;
+		color: white;
+		border-radius: 19px;
+	}
+	.chbx_label p{
+		text-decoration: none;
+	    color: #78909C;
+	    font-size: 15px;
+	    font-family: Raleway;
+	    -webkit-font-smoothing: antialiased;
+	    font-weight: 600;
+	    display: inline-block;
+	    padding: 5px 8px;
+	    cursor: pointer;
+	}
+	.chbx_label p:hover{
+		background-color: #78909C;
+		color: white;
+		border-radius: 19px;
+	}
+
+
+/* sign-up-page */
+	#sign-up-page .box{
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#sign-up-form{
+		margin-top: 3em;
+	}
+	#sign-up-form button{
+		margin-top: 2em;
+	}
+	#sign-up-form .chbx_label p{
+		margin-right: 24px;
+		line-height: 18px;
+	}
+
+	/*#sign-up-form p{
+		line-height: 0;
+	}*/
+	.sign-up-form-input label,
+	#sign-up-form h4{
+		display: block;
+		font-size: 12px;
+		font-family: Raleway;
+		-webkit-font-smoothing:antialiased;
+		letter-spacing: 2px;
+		color: #79A2B2;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	#campus-selector{
+		margin-bottom: 2em;
+		margin-top: -1em;
+	}
+	#campus-selector > div{
+		display: inline-block;
+	}
+
+	.sign-up-form-input input{
+		border: 0px;
+	    font-size: 16px;
+	    padding: 10px;
+	    -webkit-font-smoothing: antialiased;
+		color: #79A2B2;
+		width: 100%;
+	}
+	.sign-up-form-input textarea{
+		width: 100%;
+		height: 10em;
+		border: 0;
+	}
+
+
+
+
 
 /* Footer */
 	footer > section{
@@ -287,30 +373,7 @@
 		margin: 0 auto;
 		text-align: left;
 	}
-	/*.footer-container ul{
-		padding: 0;
-		margin-bottom: 0;
-	}
-	.footer-container ul li{
-		list-style-type: none;
-		line-height: 35px;
-	}
-	.footer-container ul li a{
-	    text-decoration: none;
-		color: #78909C;
-		font-size: 15px;
-	    font-family: Raleway;
-	    -webkit-font-smoothing: antialiased;
-	    font-weight: 600;
-	}
-	.footer-container ul li a:hover{
-		background-color: #78909C;
-		color: white;
-		border-radius: 19px;
-	}*/
-
-
-	.footer-container p{
+	/*.footer-container p{
 		text-decoration: none;
 		color: #78909C;
 		font-size: 15px;
@@ -326,15 +389,13 @@
 		background-color: #78909C;
 		color: white;
 		border-radius: 19px;
+	}*/
+
+	.footer-container .chbx_label p{
+	    margin-bottom: -3px;
 	}
-	.footer-container input{
-		display: none;
-	}
-	.footer-container input:checked + p{
-		background-color: #78909C;
-		color: white;
-		border-radius: 19px;
-	}
+
+	
 	
 
 	.footer-container h5{
