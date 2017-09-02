@@ -290,10 +290,12 @@ hr{
 	}
 
 /* input checkboxes */
-	.chbx_label input[type=checkbox]{
+	.chbx_label input[type=checkbox],
+	.chbx_label input[type=radio]{
 		display: none;
 	}
-	.chbx_label input[type=checkbox]:checked + p{
+	.chbx_label input[type=checkbox]:checked + p,
+	.chbx_label input[type=radio]:checked + p{
 		background-color: #78909C;
 		color: white;
 		border-radius: 19px;
